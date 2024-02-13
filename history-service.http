@@ -1,0 +1,21 @@
+# fetch all histories for a user and given compte 
+GET https://my-api-gateway-t.herokuapp.com/histories/search/findByUserIdAndCompteId?userId=user2&compteId=compte1
+
+###
+ 
+# fetch all histories for a user
+GET https://my-api-gateway-t.herokuapp.com/histories/search/findByUserId?userId=user1
+
+
+###
+# save new history 
+POST  http://my-api-gateway-t.herokuapp.com/histories/
+Content-Type: application/json
+User_ID:123
+
+{
+    "userId": "hamza History",
+    "compteId": "hamza compte",
+    "message": "test post message from gateway"
+}
+
